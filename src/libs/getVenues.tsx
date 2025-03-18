@@ -1,4 +1,4 @@
-import { VenueJson } from "../../interfaces";
+import { VenueJson } from "../../interface";
 
 export default async function getVenues(): Promise<VenueJson> {
   await new Promise(resolve => setTimeout(resolve, 300));
