@@ -1,4 +1,4 @@
-interface VenueItem {
+export interface VenueItem {
     _id: string,
     name: string,
     address: string,
@@ -12,14 +12,14 @@ interface VenueItem {
     id: string
   }
   
-  interface VenueJson {
+  export interface VenueJson {
     success: boolean,
     count: number,
     pagination: Object,
     data: VenueItem[]
   }
 
-  interface BookingItem {
+  export interface BookingItem {
     nameLastname: string;
     tel: string;
     venue: string;
