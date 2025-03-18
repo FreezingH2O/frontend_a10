@@ -24,7 +24,7 @@ const venueDetail = await getVenue(params.vid);
                     <div className="text-md mx-5">Postal Code: {venueDetail.data.postalcode}</div>
                     <div className="text-md mx-5">Tel: {venueDetail.data.tel}</div>
                     <div className="text-md mx-5">Daily Rate: {venueDetail.data.dailyrate}</div>
-                    <Link href={`/reservation?id=${venueDetail.data.id}&name=${venueDetail.data.name}`}>
+                    <Link href={`/booking?id=${venueDetail.data.id}&name=${venueDetail.data.name}`}>
                         <button className="p-3 px-6 m-4  rounded-lg  
                                 bg-[#0D9488] text-white font-poppins text-xl shadow-lg 
                                 hover:bg-[#0F766E] transition duration-300">
